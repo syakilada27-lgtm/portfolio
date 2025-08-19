@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+      <style>
+:root{
+  --bg:#f4f7fc; --text:#2a2e37; --brand:#0d2b55; --brand-2:#133b73; --card:#ffffff;
+  --muted:#6b7280; --ring:#e5e7eb;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text)}
+a{color:inherit}
+
+.header{
+  background:var(--brand); color:#fff; text-align:center; padding:46px 20px
+}
+.header img{width:130px;height:130px;object-fit:cover;border-radius:50%;border:4px solid rgba(255,255,255,.25);margin-bottom:14px}
+.header h1{margin:6px 0 4px}
+.header p{margin:0;opacity:.9}
+
+.nav{background:var(--brand-2);display:flex;gap:14px;justify-content:center;flex-wrap:wrap;padding:12px}
+.nav a{color:#fff;text-decoration:none;font-weight:700;padding:10px 14px;border-radius:12px}
+.nav a:hover{background:rgba(255,255,255,.14)}
+
+.container{max-width:980px;margin:0 auto;padding:34px 20px}
+.section-title{color:var(--brand);border-bottom:3px solid var(--brand);display:inline-block;margin-bottom:16px}
+.lead{font-size:18px;line-height:1.7;color:#1f2937}
+.card{background:var(--card);border:1px solid var(--ring);border-radius:16px;padding:20px;margin:14px 0;box-shadow:0 8px 20px rgba(13,43,85,.06)}
+.grid{display:grid;gap:16px}
+.grid-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.grid-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+@media (max-width:860px){.grid-2,.grid-3{grid-template-columns:1fr}}
+.badge{display:inline-block;background:#eaf2ff;color:#0d2b55;padding:6px 10px;border-radius:999px;font-size:12px;margin-right:8px}
+.kicker{letter-spacing:.12em;color:var(--muted);text-transform:uppercase;font-size:12px;margin-bottom:6px}
+.muted{color:var(--muted)}
+.btn{display:inline-block;background:var(--brand);color:#fff;text-decoration:none;padding:12px 16px;border-radius:12px;font-weight:700}
+.btn:hover{opacity:.9}
+.list{padding-left:18px;margin:10px 0}
+.timeline{position:relative;padding-left:24px}
+.timeline::before{content:"";position:absolute;left:8px;top:0;bottom:0;width:2px;background:#d1d5db}
+.timeline .item{position:relative;margin:14px 0}
+.timeline .item::before{content:"";position:absolute;left:-1px;top:6px;width:10px;height:10px;background:var(--brand);border-radius:999px}
+
+.skill{margin:12px 0}
+.bar{height:12px;background:#e5e7eb;border-radius:999px;overflow:hidden}
+.fill{height:12px;background:var(--brand);border-radius:999px}
+
+.card img{width:100%;border-radius:12px;display:block}
+.card .title{font-weight:700;margin:8px 0 6px}
+.card .desc{color:#374151;line-height:1.6}
+.footer{background:var(--brand);color:#fff;text-align:center;padding:20px;margin-top:30px}
+<html lang="id">
+  </style>
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kontak — Syakilatul Mujahidah</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <header class="header">
+    <h1>Kontak</h1>
+    <p>Terbuka untuk kolaborasi, belajar bareng, atau diskusi ringan soal web</p>
+  </header>
+
+  <nav class="nav">
+    <a href="index.html">Beranda</a>
+    <a href="tentang.html">Profil</a>
+    <a href="resume.html">Resume</a>
+    <a href="portofolio.html">Portofolio</a>
+    <a href="kontak.html">Kontak</a>
+  </nav>
+
+  <main class="container">
+    <div class="card">
+      <ul class="list">
+        <li>Email: <a href="mailto:Syakila.da27@gmail.com">Syakila.da27@gmail.com</a></li>
+        <li>Telepon/WA: +62 831 9369 0292</li>
+        <li>Alamat: Jl. Antasari No.2</li>
+      </ul>
+      <p class="lead">
+        Saya senang mengerjakan tugas-tugas yang jelas, terukur, dan berdampak. Jika kamu memiliki ide halaman
+        sederhana—seperti landing page, profil usaha, atau halaman event—saya siap membantu menyusunnya dari
+        konsep hingga tayang di web. Mari terhubung!
+      </p>
+    </div>
+  </main>
+
+  <footer class="footer">© 2025 Syakilatul Mujahidah</footer>
+</body>
+</html>
